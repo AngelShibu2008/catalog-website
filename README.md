@@ -8,4 +8,4 @@ Still populating and improving!
 - Built with HTML, CSS, and JavaScript
 
 ## Status
-🚧 Work in progress: expanding content and refining design/efficiency.
+🚧 Work in progress: expanding content, refining design/efficiency, and optimizing for all devices.
