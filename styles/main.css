@@ -1,0 +1,72 @@
+/* Navigation Panel Code from ChatGPT */
+
+#hamburger {
+  font-size: 40px;
+}
+
+#backArrow {
+  font-size: 30px;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .side-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .side-nav a:hover {
+    background-color: #575757;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  body.nav-open {
+    transition: margin-left 0.5s ease;
+    
+    margin-left: 250px; /* Matches the width of the navigation panel */
+  }
+  
+  body.nav-closed {
+    transition: margin-left 0.5s ease;
+    margin-left: 0;
+  }

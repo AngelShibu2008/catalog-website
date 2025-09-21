@@ -1,0 +1,361 @@
+/* Sets up background pic */
+#musicBody {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Music_Banner.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center -100px;
+    transition: all 1s;
+    background-attachment: fixed;
+    background-color: #000000;
+
+}
+
+/* menu icon */
+#hamburger {
+    color: white;
+}
+
+/* title of the web page */
+#banner {
+    text-align: center;
+    font-family: "Duru Sans", serif;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #000000;
+    color: rgb(255, 255, 255);
+}
+
+/* each row's readings */
+.headings {
+    font-family: "Duru Sans", serif;
+    font-size: 20px;
+    margin: 0px 0px 7px 0px;
+    width: fit-content;
+    color: white;
+
+}
+
+/* when heading is hovered over */
+.headings:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* all the rows together */
+#content {
+    margin-top: 20%;
+}
+
+/* one row */
+.section {
+    margin: 20px;
+    padding: 5px;
+
+}
+
+/* SCROLLBAR CSS CODE */
+
+.music::-webkit-scrollbar {
+    height: 10px;
+}
+  
+
+.music::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+.music::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(106, 39, 23),  rgb(51, 21, 13));
+    border-radius: 10px;
+
+}
+
+
+
+/* Formats the rows */
+.music {
+    height: 200px;
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.468);
+    border: double;
+    padding: 0px 5px 15px 5px;
+    display: flex;
+    flex: wrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    transition: all 1s;
+
+}
+
+.circle {
+    border-radius: 100%;
+    position: relative;
+}
+.circle:hover {
+  cursor: pointer;
+}
+
+.artistImage {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(110, 51, 36, 0.582),  rgba(47, 25, 19, 0.538));
+    display: flex;
+    text-align: center;  
+    text-decoration: none;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-wrap: wrap;
+}
+
+.item {
+    color: white;
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border: double;
+    padding: 2px;
+    margin: 15px;
+    
+}
+.item:hover {
+  cursor: pointer;
+}
+
+.text {
+    position:absolute;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000003c;
+
+}
+
+.cover {
+    height: 170px;
+    width: 170px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    position: relative;
+    z-index: 2;
+
+}
+.cover:hover {
+    opacity: 0.3;
+}
+
+/* SWIPER CODE */
+
+#wholeCarousel {
+  display: none;
+}
+
+/* Overlay wrapper */
+#carouselOverlay {
+  position: fixed;        /* stay on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;           /* above everything */
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  /* width: min(900px, 92vw); */
+  width: 50%;
+  height: 55%;
+  /* height: clamp(260px, 52vw, 420px); */
+  /* border-radius: 16px; */
+  overflow: visible;       /* show peeking slides */
+  background: #000000c4;
+  border-radius: 20px;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* allow side slides to peek */
+}
+
+.carousel-slide {
+  overflow: hidden;
+  border: white solid 2px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 40%;     
+  height: 70%;
+  border-radius: 16px;
+  transform: translate(-50%, -50%); /* baseline centering */
+  transition: transform 450ms ease, opacity 450ms ease, z-index 450ms ease, box-shadow 450ms ease;
+
+}
+
+.carousel-slide:hover {
+  cursor: pointer;
+}
+
+
+/* main slide shadow */
+.carousel-slide.main {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  z-index: 50;
+}
+
+.slide-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px; height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.5);
+  color: #fff; font-size: 22px;
+  cursor: pointer; z-index: 60;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 60;
+}
+
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.dot.active { background: #c8c8c8; transform: scale(1.25); }
+
+
+
+/* ALBUM/SONG INFO CSS */
+
+.songContent{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+.carouselText {
+  position: relative;
+  z-index: 5;
+  height: fit-content;
+  margin: 10px;
+
+}
+
+.bg-images {
+  position: absolute;
+  filter: blur(10px);
+  transform: scale(4.4);
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px;
+  padding: 5px;
+}
+
+#albumText {
+  opacity: 0;
+  transition: opacity 1s ease;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: center;
+  padding: 0.1px 15px 0.1px 15px;
+  margin-bottom: 10px;
+}
+
+#iFrame {
+  width: 70%;
+  margin: auto;
+  display: none;
+}
+
+.song {
+  margin: 12px;
+  position: relative;
+  z-index: 4;
+
+}
+
+#closeCarousel {
+  color: white;
+  font-size:30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 50%;
+  margin-left: 96%;
+  cursor: pointer;
+}
+
+
+.albumLinks {
+  color: white;
+  width: 60%;
+}
+
+#aLink {
+  color: white;
+  width: auto;
+  display: inline-block;
+  margin: 10px;
+}
+
+#nameLink {
+  display: inline;
+  width: auto;
+  /* color: white; */
+  /* border: 1px solid white; */
+}
+
+.ytLinks {
+  width: 80%;
+
+}
+
+.thumbnails {
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  margin: auto;
+  border: 1px solid white;
+
+}

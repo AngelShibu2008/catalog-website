@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music</title>
+        <link rel="stylesheet" href="../styles/music.css">
+        
+        <link rel="stylesheet" href="../styles/main.css">
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/music.js"></script>
+
+    </head>
+
+    <body id="musicBody">
+        <!--Navigation Menu-->
+        <div class="menu-icon">
+            <span id="hamburger" onclick="toggleNav()">&#9776;</span> <!-- Unicode for hamburger ☰ -->
+            <span class="controls" id="backArrow" onclick="goBack()" style="display:none;">&#8592;</span> 
+        </div>
+
+        <div id="mySidenav" class="side-nav">
+            <a href="../indexes/index.html">Novels</a>
+            <a href="../indexes/tv.html">TV Shows</a>
+            <a href="../indexes/music.html">Music</a>
+
+        </div>
+
+        <!-- Content Rows -->
+         <div id="banner">
+            <h1>Music</h1>
+        </div>
+
+        <!-- Carousel Overlay -->
+    
+        <div id="wholeCarousel">
+        <div id="carouselOverlay">
+        <div class="carousel" id="carousel">
+            <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+            <div class="carousel-track" id="track">
+                <span id="closeCarousel" onclick="closeCarousel()">X</span>
+                <div id="album-slide" class="carousel-slide" onclick="albumInfo()">
+                </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+            <div class="carousel-dots" id="dots"></div>
+        </div>
+        </div>
+        </div>
+    
+
+        <div id="content">
+            <div class="section">
+                <h4 class="headings" onclick="expand('artists')">Artists</h4>
+                <div id="artists" class="music">
+
+                </div>
+                
+            </div>
+            
+    
+            <div class="section">
+                <h4 class="headings" onclick="expand('K-Pop')">K-Pop</h4>
+                <div id="K-Pop" class="music container">
+                    <!-- ONE ITEM
+                    <div class="item">
+                        <img id="cover" src="">
+                        <p id="artistName"></p>
+                        <p id="titleYear"></p>
+                        <p id="genre"></p>
+                        <ul style="list-style-type: none;">
+                            Add li tags when doing the js filling
+                            
+                        </ul>
+
+                    </div> -->
+                    
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 class="headings">Bollywood</h4>
+                <div id="Bollywood" class="music container">
+                    
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 class="headings">English</h4>
+                <div id="English" class="music container">
+                    
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 class="headings">Mollywood</h4>
+                <div id="Mollywood" class="music container">
+                    
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 class="headings">Spanish</h4>
+                <div id="Spanish" class="music container">
+                    
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 class="headings">French</h4>
+                <div id="French" class="music container">
+                    
+
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </body>
+    
+</html>

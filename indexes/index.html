@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script src="../scripts/script.js"></script>
+        <script src="../scripts/main.js"></script>
+        <title>Novels</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Placeholder for website logo-->
+        <link rel="icon" href="../images/Cream and Blue Wallpaper copy.png" type="image/png">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!--
+    
+    Write a comment for the Book Title Here...
+    <div class = "novel" id = "BOOKNAME">
+        <a href="../indexes/book.html?book=BOOKNAME">
+            <img class = "covers" id = "BOOKNAMEPic" src = "../images/novels/BOOKNAME.png">
+        </a>
+        <h4 class = "titles" id = "BOOKNAMETitle">BOOKNAME AND AUTHOR</h4>
+        <h4 class = "reviews" id = "BOOKNAMEReview">RATING</h4>
+    </div>
+    
+    -->
+
+    <body id="body">
+        <div id="body2">
+        <!-- Navigation Bar -->
+        
+        <!-- <div class="menu-icon" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+
+        <div class="menu-icon">
+            <span class="controls" id="hamburger" onclick="toggleNav()">&#9776;</span> <!-- Unicode for hamburger ☰ -->
+            <span class="controls" id="backArrow" onclick="goBack()" style="display:none;">&#8592;</span> <!-- Unicode for left arrow ← -->
+        </div>
+          
+        <div id="mySidenav" class="side-nav">
+            <a href="../indexes/index.html">Novels</a>
+            <a href="../indexes/tv.html">TV Shows & Movies</a>
+            <a href="../indexes/music.html">Music</a>
+
+        </div>
+
+        <!--Heading of Website-->
+       
+            <div id="website">
+            <h1 id="main_title">Novels</h1> 
+            </div>
+ 
+
+        <div id="content">
+            <!--Fantasy genre section-->
+            <div class = "section" id = "fantasy">
+                
+                <div class = "heading"> 
+                    <h2 class = "genre" id="fantasytitle" onclick="showGenre('fantasy', 'fantasytitle', 'fantasydescript')">Fantasy</h2>
+                    <p class = "description" id="fantasydescript">Includes magic, imaginary worlds, superheroes, fiction.</p>
+                </div>
+                
+                <div class="books">
+                    <!--Spellslingers Academy of Magic Series-->
+                    <div class = "novel" id = "Spellslingers">
+                        <a href="../indexes/book.html?book=Spellslingers">
+                            <img class = "covers" id = "SpellslingersPic" src = "../images/novels/Spellslingers.jpg">
+                        </a>
+                        <h4 class = "titles" id = "SpellslingersTitle">Spellslingers Academy of Magic Series by Annabel Chase</h4>
+                        <h4 class = "reviews" id = "SpellslingersReview">4.5 stars</h4>
+                    </div>
+
+                    <!--Spellbound Series-->
+                    <div class = "novel" id = "Spellbound">
+                        <a href="../indexes/book.html?book=Spellbound">    
+                            <img class = "covers" id = "SpellboundPic" src = "../images/novels/Spellbound.jpg">
+                        </a>
+                        <h4 class = "titles" id = "SpellboundTitle">Spellbound Series by Annabel Chase</h4>
+                        <h4 class = "reviews" id = "SpellboundReview">4 stars</h4>
+                    </div>
+
+                    <!--The Midnight Empire Series-->
+                    <div class = "novel" id = "Midnight">
+                        <a href="../indexes/book.html?book=Midnight">    
+                            <img class = "covers" id = "MidnightPic" src = "../images/novels/Midnight.jpg">
+                        </a>
+                        <h4 class = "titles" id = "MidnightTitle">The Midnight Empire Series by Annabel Chase</h4>
+                        <h4 class = "reviews" id = "MidnightReview">4 stars</h4>
+                    </div>
+
+                    <!--Bladesmith Series -->
+                    <div class = "novel" id = "Bladesmith">
+                        <a href="../indexes/book.html?book=Bladesmith">
+                            <img class = "covers" id = "BladePic" src = "../images/novels/Bladesmith.jpg">
+                        </a>
+                        <h4 class = "titles" id = "BladeTitle">Bladesmith Series by Tricia Levenseller</h4>
+                        <h4 class = "reviews" id = "BladeReview">4 stars</h4>
+                    </div>
+
+                    <!--Magnus Chase-->
+                    <div class = "novel" id = "MagnusChase">
+                        <a href="../indexes/book.html?book=MagnusChase">
+                            <img class = "covers" id = "MagnusPic" src = "../images/novels/MagnusChase.jpg">
+                        </a>
+                        <h4 class = "titles" id = "MagnusTitle">Magnus Chase and the Gods of Asgard Series by Rick Riordan</h4>
+                        <h4 class = "reviews" id = "MagnusReview">3.5 stars</h4>
+                    </div>
+                    
+                    <!--Harry Potter Series-->
+                    <div class = "novel" id = "HarryPotter">
+                        <a href="../indexes/book.html?book=HarryPotter">
+                            <img class = "covers" id = "HarryPotterPic" src = "../images/novels/HarryPotter.jpg">
+                        </a>
+                        <h4 class = "titles" id = "HarryPotterTitle">Harry Potter Series by Joanne K. Rowling</h4>
+                        <h4 class = "reviews" id = "HarryPotterReview">3.5 stars</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Romance genre section-->
+            <div class = "section" id = "romance">
+                
+                <div class = "heading"> 
+                    <h2 class = "genre" id="romancetitle" onclick="showGenre('romance', 'romancetitle', 'romancedescript')">Romance</h2>
+                    <p class = "description" id="romancedescript">Includes young adult books and romantic relationships.</p>
+                </div>
+                
+                <div class="books">
+                    <!--I Hope This Doesn't Find You-->
+                    <div class = "novel" id = "HopeThisDoesntFindYou">
+                        <a href="../indexes/book.html?book=HopeThisDoesntFindYou">
+                            <img class = "covers" id = "HopePic" src = "../images/novels/HopeThisDoesntFindYou.jpg">
+                        </a>
+                        <h4 class = "titles" id = "HopeTitle">I Hope This Doesn't Find You by Ann Liang</h4>
+                        <h4 class = "reviews" id = "HopeReview">4.5 stars</h4>
+                    </div>
+
+                    <!--Show for Two-->
+                    <div class = "novel" id = "ShowForTwo">
+                        <a href="../indexes/book.html?book=ShowForTwo">
+                            <img class = "covers" id = "ShowPic" src = "../images/novels/ShowForTwo.jpg">
+                        </a>
+                        <h4 class = "titles" id = "ShowTitle">A Show for Two Novel by Tashie Bhuiyan</h4>
+                        <h4 class = "reviews" id = "ShowReview">4.5 stars</h4>
+                    </div>
+
+                    <!--Counting Down with You-->
+                    <div class = "novel" id = "CountingDownWithYou">
+                        <a href="../indexes/book.html?book=CountingDownWithYou">
+                            <img class = "covers" id = "CountingPic" src = "../images/novels/CountingDownWithYou.jpg">
+                        </a>
+                        <h4 class = "titles" id = "CountingTitle">Counting Down with You Novel by Tashie Bhuiyan</h4>
+                        <h4 class = "reviews" id = "CountingReview">4.5 stars</h4>
+                    </div>
+
+                    <!--This Time It's Real-->
+                    <div class = "novel" id = "ThisTimeItsReal">
+                        <a href="../indexes/book.html?book=ThisTimeItsReal">
+                            <img class = "covers" id = "RealPic" src = "../images/novels/ThisTimeItsReal.jpg">
+                        </a>
+                        <h4 class = "titles" id = "RealTitle">This Time It's Real Novel by Ann Liang</h4>
+                        <h4 class = "reviews" id = "RealReview">4.5 stars</h4>
+                    </div>
+                
+                    <!--The Name Drop -->
+                    <div class = "novel" id = "NameDrop">
+                        <a href="../indexes/book.html?book=NameDrop">
+                            <img class = "covers" id = "NamePic" src = "../images/novels/NameDrop.jpg">
+                        </a>
+                        <h4 class = "titles" id = "NameTitle">The Name Drop by Susan Lee</h4>
+                        <h4 class = "reviews" id = "NameReview">4.5 stars</h4>
+                    </div>
+
+                    <!--Twilight -->
+                    <div class = "novel" id = "Twilight">
+                        <a href="../indexes/book.html?book=Twilight">
+                            <img class = "covers" id = "TwilightPic" src = "../images/novels/Twilight.jpg">
+                        </a>
+                        <h4 class = "titles" id = "TwilightTitle">Twilight Saga Series by Stephenie Meyer</h4>
+                        <h4 class = "reviews" id = "TwilightReview">4.5 stars</h4>
+                    </div>
+
+                    <!--The Upside of Falling -->
+                    <div class = "novel" id = "TheUpsideOfFalling">
+                        <a href="../indexes/book.html?book=UpsideOfFalling">
+                            <img class = "covers" id = "UpsidePic" src = "../images/novels/Upside.jpg">
+                        </a>
+                        <h4 class = "titles" id = "UpsideTitle">The Upside of Falling Novel by Alex Light</h4>
+                        <h4 class = "reviews" id = "UpsideReview">4 stars</h4>
+                    </div>
+
+                    <!--My Mechanical Romance -->
+                    <div class = "novel" id = "MyMechanicalRomance">
+                        <a href="../indexes/book.html?book=MyMechanicalRomance">
+                            <img class = "covers" id = "MechanicalPic" src = "../images/novels/Mechanical.jpg">
+                        </a>
+                        <h4 class = "titles" id = "MechanicalTitle">My Mechanical Romance Novel by Alexene Farol Follmuth</h4>
+                        <h4 class = "reviews" id = "MechanicalReview">3.5 stars</h4>
+                    </div>
+
+                    <!--The Selection-->
+                    <div class = "novel" id = "TheSelection">
+                        <a href="../indexes/book.html?book=TheSelection">
+                            <img class = "covers" id = "SelectPic" src = "../images/novels/Selection.jpg">
+                        </a>
+                        <h4 class = "titles" id = "SelectTitle">The Selection Book Series by Kiera Cass</h4>
+                        <h4 class = "reviews" id = "SelectReview">3.5 stars</h4>
+                    </div>
+
+                    <!--You've Reached Sam -->
+                    <div class = "novel" id = "YouveReachedSam">
+                        <a href="../indexes/book.html?book=YouveReachedSam">
+                            <img class = "covers" id = "SamPic" src = "../images/novels/YouveReachedSam.jpg">
+                        </a>
+                        <h4 class = "titles" id = "SamTitle">You've Reached Sam Novel by Dustin Thao</h4>
+                        <h4 class = "reviews" id = "SamReview">2.5 stars</h4>
+                    </div>
+                
+                </div>
+            </div>
+        
+            <!--Sci-Fi genre section-->
+            <div class = "section" id = "scifi">
+                
+                <div class = "heading"> 
+                    <h2 class = "genre" id="scifititle" onclick="showGenre('scifi', 'scifititle', 'scifidescript')">Science Fiction</h2>
+                    <p class = "description" id="scifidescript">Includes dystopian societies, outerspace, aliens, future, technology, etc.</p>
+                </div>
+                
+                <div class="books">
+                    <!--Hunger Games-->
+                    <div class = "novel" id = "HungerGames">
+                        <a href="../indexes/book.html?book=HungerGames">
+                            <img class = "covers" id = "HungerPic" src = "../images/novels/HungerGames.jpg">
+                        </a>
+                        <h4 class = "titles" id = "HungerTitle">The Hunger Games Series by Suzanne Collins</h4>
+                        <h4 class = "reviews" id = "HungerReview">5 stars</h4>
+                    </div>
+                    
+                    <!--Skyward-->
+                    <div class = "novel" id = "Skyward">
+                        <a href="../indexes/book.html?book=Skyward">
+                            <img class = "covers" id = "SkyPic" src = "../images/novels/Skyward.jpg">
+                        </a>
+                        <h4 class = "titles" id = "SkyTitle">Skyward Series by Brandon Sanderson</h4>
+                        <h4 class = "reviews" id = "SkyReview">4 stars</h4>
+                    </div>
+
+                    <!--If You Could See the Sun -->
+                    <div class = "novel" id = "IfYouCouldSeeTheSun">
+                        <a href="../indexes/book.html?book=IfYouCouldSeeTheSun">
+                            <img class = "covers" id = "IYCSTSPic" src = "../images/novels/IYCSTS.jpg">
+                        </a>
+                        <h4 class = "titles" id = "IYCSTSTitle">If You Could See the Sun Novel by Ann Liang</h4>
+                        <h4 class = "reviews" id = "IYCSTSReview">4.5 stars</h4>
+                    </div>
+
+                    <!--ShadowChildren-->
+                    <div class = "novel" id = "ShadowChildren">
+                        <a href="../indexes/book.html?book=ShadowChildren">
+                            <img class = "covers" id = "ShadowPic" src = "../images/novels/ShadowChildren.jpg">
+                        </a>
+                        <h4 class = "titles" id = "ShadowTitle">Shadow Children Series by Margaret Peterson Haddix</h4>
+                        <h4 class = "reviews" id = "ShadowReview">4 stars</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Realistic Fiction genre section-->
+            <div class = "section" id = "realistic">
+                
+                <div class = "heading"> 
+                    <h2 class = "genre" id="realistictitle" onclick="showGenre('realistic', 'realistictitle', 'realisticdescript')">Realistic Fiction</h2>
+                    <p class = "description" id="realisticdescript">Includes real life concepts and events.</p>
+                </div>
+                
+                <div class="books">
+                    <!--Hatchet-->
+                    <div class = "novel" id = "Hatchet">
+                        <a href="../indexes/book.html?book=Hatchet">
+                            <img class = "covers" id = "HatchetPic" src = "../images/novels/Hatchet.jpg">
+                        </a>
+                        <h4 class = "titles" id = "HatchetTitle">The Hatchet Series by Gary Paulsen</h4>
+                        
+                        <h4 class = "reviews" id = "HatchetReview">3 stars</h4>
+                    </div>
+
+                    <!--Restart-->
+                    <div class = "novel" id = "Restart">
+                        <a href="../indexes/book.html?book=Restart">
+                            <img class = "covers" id = "RestartPic" src = "../images/novels/Restart.jpg">
+                        </a>
+                        <h4 class = "titles" id = "RestartTitle"> A Restart Novel by Gordon Korman</h4>
+                        
+                        <h4 class = "reviews" id = "RestartReview">3 stars</h4>
+                    </div>
+
+                    <!--Dork Diaries-->
+                    <div class = "novel" id = "DorkDiaries">
+                        <a href="../indexes/book.html?book=DorkDiaries">
+                            <img class = "covers" id = "DorkPic" src = "../images/novels/Dork.jpg">
+                        </a>
+                        <h4 class = "titles" id = "DorkTitle"> Dork Diaries Series by Rachel Renée Russell</h4>
+                        <h4 class = "reviews" id = "DorkReview">2.5 stars</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

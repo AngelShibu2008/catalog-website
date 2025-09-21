@@ -1,0 +1,180 @@
+/*Iron
+#E0E1E2
+
+Kelp
+#4D563D
+
+Avocado
+#828661
+
+Roman Coffee
+#7D624D*/
+.navigation {
+    text-align: left;
+    float: left;
+    margin: 10px;
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+   
+}
+
+#navibar {
+    height: 40px;
+    background-color: #d8d7d1;
+    border: solid 1px;
+
+}
+
+.navigation:hover {
+    color: #7A8755;
+
+}
+
+#navitext {
+    font-family: "Duru Sans", serif;
+    cursor: auto;
+
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+
+}
+
+#navitext:hover {
+    color:black;
+
+}
+
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+#series {
+    font-size: 1vmax; /* 20px */
+    font-family: 'Dancing Script', serif;
+
+}
+
+#book {
+    font-size: 1.5vmax; /* 30px; */
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#heading {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 3px;
+    padding-top: 5px;
+    margin-top: 0px;
+
+}
+
+#content {
+    margin: 10px 50px 50px 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#pic {
+    margin: 40px 30px 30px 0px;
+    border: double 10px;
+    width: 30%;
+    min-width: 25%;
+    height: 75%;
+    max-height: 675px;
+    box-shadow: 0px 0px 10px 5px #2F2C4F;
+     
+}
+@media only screen and (max-width: 1200px) {
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #text {
+        width: 100%;
+    }
+}
+
+#text {
+    margin: 41px 30px 30px 0px;
+    border-style: double;
+    height: 75%;
+    max-height: 680px;
+    overflow-y: scroll;
+
+}
+
+
+#summary {
+    font-size: 0.8vmax;
+    /* font-size: auto; */
+    border: solid 1px;
+    margin: 30px;
+    padding: 12px;
+    font-family: 'Playfair Display', serif;
+    background-color:#e0e1e2c2;
+    box-shadow: 0px 0px 10px 5px #4D563D;
+   
+}
+
+#reviews {
+    font-size: 0.8vmax;
+    /* font-size: 16px; */
+    border: solid 1px;
+    margin: 30px;
+    padding: 12px;
+    font-family: 'Playfair Display', serif;
+    background-color:#e0e1e2c2;
+    box-shadow: 0px 0px 10px 5px #4D563D;
+
+}
+
+.series {
+    width: 10%;
+    border: double black;
+    padding: 1px;
+    border-style: ridge;
+    opacity: 0.70;
+    margin-bottom: 30px;
+
+}
+
+#books {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: auto;
+
+}
+
+.series:hover {
+    box-shadow: 0px 0px 10px 5px #6B6559;
+    
+}
+
+#summaries {
+    display: none;
+    margin: auto;
+    font-size: 0.8vmax;
+    /* font-size: 18px; */
+    border: solid 1px;
+    padding: 12px;
+    font-family: 'Playfair Display', serif;
+    background-color:#e0e1e2c2;
+    box-shadow: 0px 0px 10px 5px #4D563D;
+    width: 50%;
+    max-height: 50%;
+    margin-bottom: 40px;
+
+}

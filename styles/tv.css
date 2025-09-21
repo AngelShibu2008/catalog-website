@@ -1,0 +1,160 @@
+body {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://t4.ftcdn.net/jpg/06/89/49/95/360_F_689499531_MeYeI1VVavgYQRzz0S3JxkQ9VxzgYZQh.jpg'); */
+    background: linear-gradient(rgba(93, 0, 0, 0.281), rgba(0, 0, 0, 0.5)), url('../images/TV_Background.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+
+#banner {
+    text-align: center;
+    font-family: "Duru Sans", serif;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #000000;
+    color: white;
+}
+
+#hamburger {
+    color: white;
+}
+
+.headings {
+    font-family: "Duru Sans", serif;
+    font-size: 20px;
+    margin: 0px 0px 7px 0px;
+    width: fit-content;
+    color: white;
+
+}
+
+.headings:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section {
+    margin: 20px;
+    padding: 5px;
+}
+
+
+.tv {
+    height: 200px;
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.468);
+    border: double;
+    padding: 0px 5px 15px 5px;
+    display: flex;
+    flex: wrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    transition: all 1s;
+    max-height: 410px;
+
+}
+
+/* SCROLLBAR CSS CODE */
+
+.tv::-webkit-scrollbar {
+    height: 10px;
+}
+  
+
+.tv::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+.tv::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(128, 8, 8),  rgb(40, 0, 0));
+    border-radius: 10px;
+
+}
+
+
+.item {
+    height: 170px;
+    width: 120px;
+    border: double;
+    padding: 2px;
+    margin: 15px;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 10px 5px #ffffff77;
+    cursor: pointer;
+}
+
+img {
+    height: 170px;
+    width: 120px;
+}
+
+#info {
+    color: white;
+    display: none;
+    position: fixed;
+    margin-left: 28%;
+    margin-right: 30%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid black;
+    background-image: url('#'), linear-gradient(to right, black, white);
+    background-size: cover;
+    background-blend-mode:multiply;
+    z-index: 999;
+    padding: 0px 10px 10px 30px;
+    box-shadow: 0px 0px 10px 5px rgb(29, 0, 0);
+
+}
+
+#image {
+    display:none;
+}
+
+#text {
+    width: 45%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #image {
+        display: block;
+        height: auto;
+        width:80%;
+        margin: auto;
+    }
+    
+    #info {
+        background: black;
+        overflow-y: scroll;
+    }
+
+    #text {
+        margin: auto;
+        width: 90%;
+    }
+
+}
+
+#name {
+    display: inline-block;
+}
+
+#close {
+    float: right;
+    margin: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.5;
+
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+#close:active {
+    opacity: 1;
+}

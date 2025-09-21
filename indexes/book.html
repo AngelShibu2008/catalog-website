@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book</title>
+        <link rel="stylesheet" href="../styles/book.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/book.js"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- <div class="menu-icon" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+          
+        <div class="menu-icon">
+            <span id="hamburger" onclick="toggleNav()">&#9776;</span> <!-- Unicode for hamburger ☰ -->
+            <span id="backArrow" onclick="goBack()" style="display:none;">&#8592;</span> <!-- Unicode for left arrow ← -->
+        </div>
+
+        <!-- <div id="mySidenav" class="side-nav">
+            <a href="../indexes/index.html">Novels</a>
+            <a href="../indexes/tv.html">TV Shows</a>
+        </div>
+         -->
+        
+        <div id="content">
+            <img id = "pic" src = "">
+            
+            <div id="text">
+                <div id="heading">
+                    <h3 id="series"></h3>
+                    <h1 id ="book">Book Title by Author</h1>
+                </div>
+                
+                <div id="summary">
+                    Summary Here
+                </div>
+    
+                <div id="reviews">
+                    Review Here
+                </div>
+            </div>
+            
+        </div>
+        
+        
+            
+        <div id = "books">
+
+        </div>
+
+        <div id = "summaries">
+            
+        </div>
+
+        <div id="block"></div>
+    </body>
+
+</html>

@@ -1,0 +1,49 @@
+TO DO:
+- add search bar for ages, category, languages, genre, etc. (could use tags like mama's YT channel)
+- add music, movies, tv shows, books, etc.
+- add open sources (links to netflix, barnes and nobles, for reviews or places to watch/read/listen to the stuffs)
+- use sql to store info about each item (book, song, show, movie, etc.)
+- create a homepage
+- Create a function where there is a heart icon that when clicked, it is added to the next-up list on stuff to watch so that all the other lists can be of
+  shows that I want to watch and that I have watched. (ex: the korean section would have tv shows that i watched and r on my list and then i click the heart
+  which saves it to the next-up/watch later list but still keeps it in the korean section as well)
+        - Make an array instead of the divs in the tv.html page so that i dont have to keep copy/pasting for new movies and instead, add a tag that when a 
+          loop is run, it'll add all the shows with the same tag (ex: korean, next-up, my-list, etc.) to the same list and they can have multiple tags.
+
+
+
+Make a JS array that works as a sql table for the books and tv shows and then create ONE function that accesses that public variable to get the info.
+    maybe make something similar for the html page instead of making hundreds of divs for each thingamajig.
+
+
+
+
+
+JSON TEMPLATES!!
+
+
+// SONGS.JSON
+{
+  "artist": "",
+  "songCover": "",
+  "albumName": "",
+  "songName": "",
+  "songID": "",
+  "genre": "",
+  "releaseYear": "",
+  "channel": ""
+}
+
+// MUSIC.JSON
+{
+  "artist": "",
+  "albumCover": "",
+  "albumName": "",
+  "songs": "",
+  "songID": "",
+  "genre": "",
+  "releaseYear": "",
+  "albumSongsLink": "",
+  "conceptTrailer": "",
+  "channel": ""
+}

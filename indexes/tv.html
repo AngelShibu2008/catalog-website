@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/tv.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script src="../scripts/tv.js" defer></script>
+        <script src="../scripts/main.js"></script>
+        <title>TV Shows and Movies</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTavkD02h6uYExe2YVzgcMXb9o92Hv50zFOfw&s" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navigation Menu-->
+        <div class="menu-icon">
+            <span id='hamburger' onclick="toggleNav()">&#9776;</span> <!-- Unicode for hamburger ☰ -->
+            <!-- <span class="controls" id="backArrow" onclick="goBack()" style="display:none;">&#8592;</span> Unicode for left arrow ← -->
+        </div>
+
+        <div id="mySidenav" class="side-nav">
+            <a href="../indexes/index.html">Novels</a>
+            <a href="../indexes/tv.html">TV Shows</a>
+            <a href="../indexes/music.html">Music</a>
+
+        </div>
+
+        <!-- Sections -->
+        <div id="banner">
+            <h1>TV Shows & Movies</h1>
+        </div>
+
+            <div id="info">
+                <div id="title">
+                    <h2 id="name">TV Show or Movie Name</h2>
+                    <div onclick="closeInfo()" id="close">X</div> 
+                </div>
+                <div>
+                    <img id="image" src="">
+                </div>
+
+                
+                <div id="showInfo">
+                    <div id="text">
+
+                        <p id="basics">2000 | PG-13 | 2 Seasons | 16 Episodes | Genre</p>
+
+                        <p id="summary"></p>
+                        <p id="starring"></p>
+                        <p id="creators"></p> 
+                    </div>
+                    
+                </div>
+            </div>
+
+        <div id="content">
+            <div class="section">
+                <h4 id="list" class="headings">My List</h4>
+                <div id="listTV" class="tv">
+
+                </div>
+                
+            </div>
+            
+    
+            <div class="section">
+                <h4 id="next" class="headings">Next Up</h4>
+                <div id="nextTV" class="tv">
+                    
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 id="kdrama" class="headings" onclick="expand('kdrama')">K-Drama Corner</h4> 
+                <div id="kdramaTV" class="tv">
+                    <div id="QueenOfTears" class="item" onclick="showInfo('QueenOfTears')">
+                        <img src="https://image.tmdb.org/t/p/original/bEmMYQxbhC15HPknimFRg9zY37a.jpg" title="Queen of Tears">
+                    </div>
+
+                    <div id="MyDemon" class="item" onclick="showInfo('MyDemon')">
+                        <img src="https://static.wikia.nocookie.net/the-dramas/images/e/e9/Demon%2C_my%2C_2024.png/revision/latest?cb=20240129032513" title="My Demon">
+                    </div>
+
+                    <div id="KingTheLand" class="item" onclick="showInfo('KingTheLand')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/da/King_the_Land.png" title="King the Land">
+                    </div>
+
+                    <div id="DoctorSlump" class="item" onclick="showInfo('DoctorSlump')">
+                        <img src="https://i.pinimg.com/736x/74/ba/38/74ba3879cc0358c7487aa43c4ef3683e.jpg" title="Doctor Slump">
+                    </div>
+
+                    <div id="DoomAtYourService" class="item" onclick="showInfo('DoomAtYourService')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Doom_at_Your_Service.jpg" title="Doom at Your Service">
+                    </div>
+
+                    <div id="Vincenzo" class="item" onclick="showInfo('Vincenzo')">
+                        <img src="https://i.pinimg.com/736x/6d/01/e5/6d01e5dd4394a94c892485e48cd6ee8c.jpg" title="Vincenzo">
+                    </div>
+
+                    <div id="LoveNextDoor" class="item" onclick="showInfo('LoveNextDoor')">
+                        <img src="https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2uVTfxGfTWyajI2leqiF778HYZK.jpg" title="Love Next Door">
+                    </div>
+                    
+                    <div id="QueenOfTears" class="item" onclick="showInfo('QueenOfTears')">
+                        <img src="https://image.tmdb.org/t/p/original/bEmMYQxbhC15HPknimFRg9zY37a.jpg" title="Queen of Tears">
+                    </div>
+
+                    <div id="MyDemon" class="item" onclick="showInfo('MyDemon')">
+                        <img src="https://static.wikia.nocookie.net/the-dramas/images/e/e9/Demon%2C_my%2C_2024.png/revision/latest?cb=20240129032513" title="My Demon">
+                    </div>
+
+                    <div id="KingTheLand" class="item" onclick="showInfo('KingTheLand')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/da/King_the_Land.png" title="King the Land">
+                    </div>
+
+                    <div id="DoctorSlump" class="item" onclick="showInfo('DoctorSlump')">
+                        <img src="https://i.pinimg.com/736x/74/ba/38/74ba3879cc0358c7487aa43c4ef3683e.jpg" title="Doctor Slump">
+                    </div>
+
+                    <div id="DoomAtYourService" class="item" onclick="showInfo('DoomAtYourService')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Doom_at_Your_Service.jpg" title="Doom at Your Service">
+                    </div>
+
+                    <div id="Vincenzo" class="item" onclick="showInfo('Vincenzo')">
+                        <img src="https://i.pinimg.com/736x/6d/01/e5/6d01e5dd4394a94c892485e48cd6ee8c.jpg" title="Vincenzo">
+                    </div>
+
+                    <div id="LoveNextDoor" class="item" onclick="showInfo('LoveNextDoor')">
+                        <img src="https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2uVTfxGfTWyajI2leqiF778HYZK.jpg" title="Love Next Door">
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="section">
+                <h4 id="china" class="headings" onclick="expand('china')">CineChina</h4>
+                <div id="chinaTV" class="tv">
+
+                    <div id="FallingIntoSmile" class="item" onclick="showInfo('FallingIntoSmile')">
+                        <img src="https://ih1.redbubble.net/image.3206382514.7437/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" title="Falling Into Your Smile">
+                    </div>
+
+                    <div id="HiddenLove" class="item" onclick="showInfo('HiddenLove')">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZTc3MmQ1YjctYWM4YS00YzFmLTg2YjQtNjEzODQ5ZWVjZjVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" title="Hidden Love">
+                    </div>
+
+                    <div id="Unforgettable" class="item" onclick="showInfo('Unforgettable')">
+                        <img src="https://i.pinimg.com/736x/62/ab/d5/62abd5a97a129d9543a133d11ee6747c.jpg" title="Unforgettable Love">
+                    </div>
+
+                    <div id="WhenFly" class="item" onclick="showInfo('WhenFly')">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODI3NzUwYTktMjlkYS00MDNiLTg0MjgtNWQ1NWZkYmQ2Mzk4XkEyXkFqcGc@._V1_.jpg" title="When I Fly Towards You">
+                    </div>
+
+                    <div id="Moonlight" class="item" onclick="showInfo('Moonlight')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Chinese_drama_Moonlight%27s_poster.jpeg" title="Moonlight">
+                    </div>
+
+                    <div id="FirstFrost" class="item" onclick="showInfo('FirstFrost')">
+                        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29538734_b_v8_aa.jpg" title="The First Frost">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h4 id="bolly" class="headings">Lights, Camera, Bolly!</h4>
+                <div id="bollyTV" class="tv">
+
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>

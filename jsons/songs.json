@@ -1,0 +1,123 @@
+[
+    {
+        "artist": "Camila Cabello",
+        "songCover": "https://lh3.googleusercontent.com/WS4PZ8a0jJxEXt_RkVfeXvJ6m5JTbA4JaBkgyeftLpbaZv7AuPPGev5oEHV-ueUWZ-kozzQd1jq481Nr=w544-h544-l90-rj",
+        "albumName": "Romance",
+        "songName": "Shameless",
+        "songID": "zAw3MLNU56s",
+        "genre": "English",
+        "releaseYear": "2019",
+        "channel": "https://music.youtube.com/channel/UCio_FVgKVgqcHrRiXDpnqbw"
+    },
+    {
+        "artist": "Tate McRae",
+        "songCover": "https://lh3.googleusercontent.com/Rnm0BN7NvQNLh_F8uhS76tP5iu6wo65D7N9-qztkVx7uN2xR_0WMepb47Mlcw9EJaWArHRXStsFyfA2PtQ=w544-h544-l90-rj",
+        "albumName": "DRIVE",
+        "songName": "10:35",
+        "songID": "TG2AtaWuikA",
+        "genre": "English",
+        "releaseYear": "2023",
+        "channel": "https://music.youtube.com/channel/UCQh6LB206jF3JxpCDD-fp5Q"
+    },
+    {
+        "artist": "Ava Max",
+        "songCover": "https://lh3.googleusercontent.com/FUG5Y3cVLCIoylGGa_jJrKuTP2p8LFtN4k-n5kmAosqPPRuq3wOHZEE4Zhbh9uNdDw4EzlWT2c9OlWLO=w544-h544-l90-rj",
+        "albumName": "The Motto",
+        "songName": "The Motto",
+        "songID": "tWIJFhZ69_U",
+        "genre": "English",
+        "releaseYear": "2021",
+        "channel": "https://music.youtube.com/channel/UCOwgc8DswjoBMuuUU2ScPvQ"
+    },
+    {
+        "artist": "Neoni",
+        "songCover": "https://lh3.googleusercontent.com/EmwM6isZG06bIooDgpzXxRbzTzUJ39FcDLiHybWEA74DZF5-AsSIZN_iGBzs05lYB6TpYORyLu1W2qEu=w544-h544-l90-rj",
+        "albumName": "DARKSIDE",
+        "songName": "DARKSIDE",
+        "songID": "jcKVfhr6O24",
+        "genre": "English",
+        "releaseYear": "2021",
+        "channel": "https://music.youtube.com/channel/UCQJ-a2IzCJ-gwlHvqvOWGhw"
+    },
+    {
+        "artist": "Isabel LaRosa",
+        "songCover": "https://lh3.googleusercontent.com/22rxD6yTyUIpdvxpAKXbQodXR4lH9kZcoTNSoiJSJb7qRltRP3zUDcGZz61W_5VfA3yZGjFzrtepho0=w544-h544-l90-rj",
+        "albumName": "i'm yours",
+        "songName": "i'm yours",
+        "songID": "WrgxnqOIPRc",
+        "genre": "English",
+        "releaseYear": "2022",
+        "channel": "https://music.youtube.com/channel/UCFiCc03UdOpKn0ib3UcSBSQ"
+    },
+    {
+        "artist": "Nej",
+        "songCover": "https://lh3.googleusercontent.com/AWrvF0kA9JIk9ZUtAI0-PF7kSTqh519lcsmFkfzUQkTbwEBBRR9cBZsERVb0WMwrtX5_9cD93Qr_Sewe=w544-h544-l90-rj",
+        "albumName": "SOS (Chapitre 2)",
+        "songName": "Paro",
+        "songID": "7eipcxsHr7M",
+        "genre": "French",
+        "releaseYear": "2022",
+        "channel": "https://music.youtube.com/channel/UCD_MrT_8bODobOFp6SlrEQQ"
+    },
+    {
+        "artist": "Bella Poarch",
+        "songCover": "https://lh3.googleusercontent.com/Zvd5AuzjDreyaejmc1H24V9K71CeklrFwlc3LCYCmfzEkDqNu5h7jRPUhmcq6RD35LxrK5HPErT8ywJI=w544-h544-l90-rj",
+        "albumName": "Dolls EP",
+        "songName": "Living Hell",
+        "songID": "qZgCvlbUAlU",
+        "genre": "English",
+        "releaseYear": "2022",
+        "channel": "https://music.youtube.com/channel/UCCY_8y1FjtOegxKB4s2bWqw"
+    },
+    {
+        "artist": "Loreen",
+        "songCover": "https://lh3.googleusercontent.com/ecCO4UBkeG7U5GBpUykPoay5kL2xOOjrHb8kBi1-DZT9OlGXMbBpoJRJxZOu1W-x-__H9WHEPwiF8rM=w544-h544-l90-rj",
+        "albumName": "Tattoo",
+        "songName": "Tattoo",
+        "songID": "pbDKb311Zrg",
+        "genre": "English",
+        "releaseYear": "2023",
+        "channel": "https://music.youtube.com/channel/UCa5Ms_IBIxzAexW__370eHQ"
+    },
+    {
+        "artist": "Jung Kook",
+        "songCover": "https://lh3.googleusercontent.com/jdEmyQN3yqjq5M0QOSQ29dg7q0Ply5-lXjrW6l5QudxPPNqdT9qHdNkNE8cafiA_kpAeYzFNOrwZ6t5LAA=w544-h544-l90-rj",
+        "albumName": "GOLDEN",
+        "songName": "Standing Next to You",
+        "songID": "sn0viUbmUVU",
+        "genre": "K-Pop",
+        "releaseYear": "2023",
+        "channel": "https://music.youtube.com/channel/UC-pOuHFcndLpyfWSPVqXt_A"
+    },
+    {
+        "artist": "Sam Tinnesz",
+        "songCover": "https://lh3.googleusercontent.com/sS9paTHPKk0eU_jQ4qLvzVhT9TzXOZ_ANtSbbVPwCCU7HPjmW-BklZBsusCP5GgA8QdS1el61aLijqY=w544-h544-l90-rj",
+        "albumName": "Play with Fire",
+        "songName": "Play with Fire (feat. Yacht Money)",
+        "songID": "smliX2zINbU",
+        "genre": "English",
+        "releaseYear": "2017",
+        "channel": "https://music.youtube.com/channel/UCbb2JJRVnkkuDs6tzlq2GLw"
+    },
+    {
+        "artist": "BLACKSWAN",
+        "songCover": "https://lh3.googleusercontent.com/GcZAST4cjyvbx5IjFLHgI6tYw0guN1ahmliKUfB_FD6z7fP4IzZ8g8vZ6cLZcBuAR2I3e44h4tpGx9OPNA=w544-h544-l90-rj",
+        "albumName": "Roll Up",
+        "songName": "Roll Up",
+        "songID": "7m468wshgeA",
+        "genre": "K-Pop",
+        "releaseYear": "2024",
+        "channel": "https://music.youtube.com/channel/UCJFFWX6gUh1fdcGFGSvthQg"
+    },
+    {
+        "artist": "tripleS",
+        "songCover": "https://lh3.googleusercontent.com/YXm4kIIAbM1nC4pSEuMusqWHyAwfCS1CoSfpdaiMTZ2eEzdlk_SlfX3oWdF65lxJBmg9lxkeDJ8zjZPc=w544-h544-l90-rj",
+        "albumName": "",
+        "songName": "Girls Never Die",
+        "songID": "",
+        "genre": "",
+        "releaseYear": "",
+        "channel": ""
+    }
+    
+]  
